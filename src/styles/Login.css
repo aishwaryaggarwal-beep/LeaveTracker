@@ -1,0 +1,82 @@
+/* General page styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8; /* subtle light gray-blue */
+  height: 100%;
+}
+
+/* Center the login box */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Login box styling */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #d1d9e6; /* subtle border */
+}
+
+/* Title styling */
+.login-title {
+  text-align: center;
+  color: #1e3a8a; /* soft blue */
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  color: #334155; /* soft dark gray */
+  font-weight: 600;
+}
+
+.input-group input {
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1; /* light gray */
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  background-color: #f8fafc; /* subtle white-blue */
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6; /* soft blue focus */
+  box-shadow: 0 0 8px rgba(59,130,246,0.2);
+}
+
+/* Button styling */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b82f6; /* soft blue */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #2563eb; /* slightly darker blue on hover */
+  box-shadow: 0 5px 15px rgba(37,99,235,0.2);
+}
