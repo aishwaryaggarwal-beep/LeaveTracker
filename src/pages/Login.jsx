@@ -31,7 +31,8 @@ export default function Login() {
     // Redirect based on role
     const userRole = decoded.roles[0]; // take the first role
     if (userRole === "ADMIN") navigate("/admin");
-    else navigate("/dashboard");
+    else if (userRole === "MANAGER") navigate("/manager");
+    else  navigate("/dashboard");
   } else {
     alert("Invalid credentials");
   }

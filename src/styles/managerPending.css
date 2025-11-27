@@ -1,0 +1,57 @@
+.pending-container {
+  padding: 20px;
+}
+
+.pending-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.pending-table th,
+.pending-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.pending-table th {
+  background: #f3f3f3;
+  font-weight: bold;
+}
+
+.empty {
+  padding: 20px;
+  color: #888;
+}
+
+.btn-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.approve-btn {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  padding: 6px 12px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.approve-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn:hover {
+  background-color: #c92a2a;
+}

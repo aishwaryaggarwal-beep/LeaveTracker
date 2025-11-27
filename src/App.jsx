@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login.jsx";
-import ProtectedRoute from "./components/ProtectedRoute.jsx";
+// import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import Dashboard from "./pages/Dashboard.jsx"; 
 import useAuthStore from "./store/authStore.js";
 import ApplyLeave from "./pages/ApplyLeave.jsx";
@@ -22,12 +22,20 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/apply" element={<ApplyLeave />} />
         <Route path="/history" element={<LeaveHistory />} />
-        <Route path="/manager" element={<ManagerDashboard />} />
+        {/* <Route path="/manager" element={<ManagerDashboard />} /> */}
          <Route
           path="/dashboard"
           element={
             <PrivateRoute allowedRoles={["USER", "MANAGER", "ADMIN"]}>
               <Dashboard />
+            </PrivateRoute>
+          }
+        />
+           <Route
+          path="/manager"
+          element={
+            <PrivateRoute allowedRoles={[ "MANAGER"]}>
+              <ManagerDashboard />
             </PrivateRoute>
           }
         />

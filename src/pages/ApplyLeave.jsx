@@ -31,7 +31,7 @@ export default function ApplyLeave() {
     };
 
     try {
-      const res = await fetch("http://localhost:8080/leave/apply", {
+      const res = await fetch("http://localhost:8081/leave/apply", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

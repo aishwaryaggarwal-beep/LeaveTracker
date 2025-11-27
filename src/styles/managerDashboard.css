@@ -1,0 +1,26 @@
+.manager-dashboard { font-family: Arial, sans-serif; color: #222; }
+.manager-navbar { display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background:#1e293b; color: #fff; }
+.manager-navbar .user { margin-right:12px; }
+.manager-navbar .logout { background:#ef4444; border:none; color:#fff; padding:6px 10px; border-radius:6px; cursor:pointer; }
+.manager-content { display:flex; height: calc(100vh - 64px); }
+.mgr-sidebar { width:220px; background:#f8fafc; padding:12px; border-right:1px solid #e6e6e6; }
+.side-btn { display:block; width:100%; text-align:left; padding:10px 12px; margin-bottom:8px; border-radius:6px; border:none; background:transparent; cursor:pointer; }
+.side-btn:hover { background:#eef2ff; }
+.side-btn.active { background:#6366f1; color:#fff; }
+.mgr-main { padding:16px; flex:1; overflow:auto; }
+.overview-cards { display:flex; gap:12px; margin-bottom:16px; }
+.card { background:#fff; padding:16px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.06); flex:1; }
+.card .big { font-size:28px; font-weight:700; margin-top:6px; }
+.pending-section .pending-list { display:flex; flex-direction:column; gap:8px; }
+.pending-row { display:flex; justify-content:space-between; align-items:center; padding:10px; background:#fff; border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,0.04); }
+.pending-row .emp-name { font-weight:600; }
+.pending-row .date-range { color:#666; font-size:13px; }
+.pending-row .reason { margin-top:6px; color:#333; }
+.actions button { margin-left:8px; padding:8px 10px; border-radius:6px; border:none; cursor:pointer; }
+.actions .approve { background:#10b981; color:#fff; }
+.actions .reject { background:#ef4444; color:#fff; }
+.history-table { width:100%; border-collapse:collapse; }
+.history-table th, .history-table td { padding:8px 10px; border-bottom:1px solid #eee; }
+.calendar-placeholder { display:flex; flex-direction:column; gap:6px; margin-top:8px; }
+.calendar-item { background:#f1f5f9; padding:8px; border-radius:6px; }
+.profile p { margin:6px 0; }
